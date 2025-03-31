@@ -1,25 +1,6 @@
+# More Renewable Flora
+Adds the ability for some small flowers and non-renewable plants like lily pad and spore blossom to be duplicated with bonemeal.
 
-Installation information
-=======
-
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
-
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
-
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
-
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
-
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+## For Developers if you want to add that to your own mod/through datapack.
+- Add the block to `more_renewable_flora:duplicate_with_bonemeal` block tag. If that block inherits from `BushBlock` or `SporeBlossomBlock` classes.
+- If it is not working after adding it in tag, or you want it to work with some other class. Contact me on GitHub (through issue), discord (`@lawliet__`), or through comments/dm.
