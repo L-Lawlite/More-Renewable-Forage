@@ -1,7 +1,7 @@
 package net.lawliet.moreRenewableFlora.mixin;
 
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
-import net.lawliet.moreRenewableFlora.BlockTags;
+import net.lawliet.moreRenewableFlora.BlockTagsRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
@@ -38,12 +38,12 @@ public class BushBlockMixin implements BonemealableBlock{
 
     @ModifyReturnValue(method = "isValidBonemealTarget(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z", at = @At("RETURN"))
     public boolean isValidTargetForBoneMeal(boolean original, LevelReader levelReader, BlockPos pos, BlockState state ) {
-        return original || state.is(BlockTags.DUPLICATE_WITH_BONEMEAL);
+        return original || state.is(BlockTagsRegistry.DUPLICATE_WITH_BONEMEAL);
     }
 
     @ModifyReturnValue(method = "isBonemealSuccess(Lnet/minecraft/world/level/Level;Lnet/minecraft/util/RandomSource;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z",at = @At("RETURN"))
     public boolean isBoneMealResultSuccess(boolean original,Level level, RandomSource randomSource, BlockPos pos, BlockState state) {
-        return original || state.is(BlockTags.DUPLICATE_WITH_BONEMEAL);
+        return original || state.is(BlockTagsRegistry.DUPLICATE_WITH_BONEMEAL);
     }
 
     @Inject(method = "performBonemeal(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/util/RandomSource;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V", at = @At("TAIL"))

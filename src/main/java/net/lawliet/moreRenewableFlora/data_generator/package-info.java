@@ -1,0 +1,4 @@
+@ParametersAreNonnullByDefault
+package net.lawliet.moreRenewableFlora.data_generator;
+
+import javax.annotation.ParametersAreNonnullByDefault;

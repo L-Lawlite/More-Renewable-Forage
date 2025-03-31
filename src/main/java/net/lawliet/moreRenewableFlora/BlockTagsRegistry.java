@@ -5,7 +5,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 
-public class BlockTags {
+public class BlockTagsRegistry {
     public static final TagKey<Block> DUPLICATE_WITH_BONEMEAL;
 
 
