@@ -7,7 +7,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import org.slf4j.Logger;
 
-@EventBusSubscriber(modid = MoreRenewableFlora.MODID,bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = MoreRenewableFlora.MODID)
 public class DataGeneratorServer {
     private static final Logger LOGGER = LogUtils.getLogger();
 
