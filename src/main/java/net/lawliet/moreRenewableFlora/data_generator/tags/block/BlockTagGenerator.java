@@ -23,6 +23,7 @@ public class BlockTagGenerator extends BlockTagsProvider {
                 .add(Blocks.LILY_PAD)
                 .add(Blocks.SPORE_BLOSSOM)
                 .add(Blocks.PITCHER_PLANT)
+                .add(Blocks.CACTUS_FLOWER)
                 .add(small_flowers);
     }
 }
