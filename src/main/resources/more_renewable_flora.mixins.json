@@ -3,7 +3,6 @@
   "package": "net.lawliet.moreRenewableFlora.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "SporeBlossomBlockMixin",
     "VegetationBlockMixin"
   ],
   "client": [

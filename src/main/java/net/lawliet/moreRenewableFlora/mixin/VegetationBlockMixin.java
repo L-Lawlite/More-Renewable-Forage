@@ -10,7 +10,6 @@ import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.BonemealableBlock;
-import net.minecraft.world.level.block.VegetationBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Intrinsic;
 import org.spongepowered.asm.mixin.Mixin;
@@ -20,7 +19,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import static net.minecraft.world.level.block.Block.popResource;
 
-@Mixin(VegetationBlock.class)
+@Mixin(targets = {"net.minecraft.world.level.block.VegetationBlock", "net.minecraft.world.level.block.SporeBlossomBlock"})
 public class VegetationBlockMixin implements BonemealableBlock{
 
     @Intrinsic @Override
